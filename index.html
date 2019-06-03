@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web|Marmelad&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="js/vendor/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+  </head>
+  
+  <body ng-app="ReaderApp">
+
+    <div class="header">
+        <h1>Летнее чтение</h1>
+        <h2>Программа 6 класса</h2>
+    </div>
+
+    <div class="main">
+      <div class="container">
+        <div ng-view></div>
+        
+
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+
+    <script src="js/controllers/BookshelfController.js"></script>
+    <script src="js/controllers/BookController.js"></script>
+    <script src="js/controllers/ChapterController.js"></script>
+
+    <script src="js/services/books.js"></script>
+
+  </body>
+</html>

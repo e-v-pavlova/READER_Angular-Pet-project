@@ -1,0 +1,168 @@
+body, html {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    padding: 40px 0;
+    text-align: center;
+}
+.header h1{
+    font-family: 'Marmelad', sans-serif;
+    font-size: 60px;
+}
+.header h2{
+    font-family: 'Istok Web', sans-serif;
+    font-size: 14px;
+}
+.container {
+    position: relative;
+    width: 100%;
+}
+.main {
+    padding: 40px 0;
+}
+.book {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding:20px;
+    text-align:center;
+}
+.book img{
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.39);
+    width: 200px;
+    margin:20px;
+    transition-property: box-shadow;
+    transition-duration: 0.4s;
+}
+.book:hover img{
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.815);
+}
+.book a {
+    color: black;
+    text-decoration: none;
+}
+.book h3, .book-detail h3, .chapter .title {
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 900;
+    margin: 0;
+    padding: 20px;
+}
+.book p {
+    padding: 0 20px;
+}
+.book-detail {
+    margin: 0 auto 0;
+    position: relative;
+    width: 75%;
+}
+.book-detail img {
+    width: 240px;   
+}
+.book-detail h3, .chapter .title {
+    padding: 20px 0;
+}
+.book-detail p {
+    font-size: 16px;
+}
+.button {
+    color: #fff;
+    display: block;
+    font-family: 'Marmelad', sans-serif;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px 0;
+    text-align: center;
+    width: 200px;
+}
+.button:hover{
+    text-decoration: none;
+    color:white;
+}
+.back-page{
+    position: fixed;
+    top: 25px;
+    left:45px;
+    text-indent: -9999px;
+}
+.back-page:before{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 20px 30px 0;
+    border-color: transparent #000000a1 transparent transparent;
+}
+.back-page:after{
+    content:"";
+    position: absolute;
+    top:1px;
+    left:2px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 29px 19px 29px 0;
+    border-color: transparent #FFFFFF transparent transparent;
+}
+.back, .next {
+    background: url('back.svg') center center ;
+    background-size: 180px 180px;
+    border-radius: 100%;
+    height: 80px;
+    left: 20px;
+    margin-top: -40px;
+    position: fixed;
+    text-indent: -9999px;
+    top: 50%;
+    transition-property: background-size;
+    transition-duration: 0.3s;
+}
+.next {
+    background: url('next.svg') center center;
+    background-size: 180px 180px;
+    left: auto;
+    right: 20px;   
+}
+.back-page:hover,
+.back:hover,
+.next:hover {
+    background-size: 220px 220px;
+}
+.book-detail .button{
+    border: 1px solid rgb(136, 76, 133);
+    color: rgb(136, 76, 133);
+    background-color: white;
+    transition-property: background-color, color;
+    transition-duration: 0.2s;
+}
+.book-detail .button:hover{
+    background-color: rgb(136, 76, 133);
+    color: white;
+}
+.chapter {
+    margin: 0 auto 0;
+    width: 50%;   
+}
+.chapter-title {
+    font-family: 'Marmelad', sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+}
+.chapter p {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 10px 0 26px;
+}
+.author {
+    font-style: italic;   
+}
+@media (max-width: 800px) {
+  .back, .next {
+    background-size: 60px 60px;
+    height: 60px;
+    width: 60px;
+  }  
+}
